@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 62.5%
+}
+body *, input {
+    font-size: 1.6rem;
+    font-family: sans-serif
+}
+body {
+    background-color: #000000;
+}
+#app {
+    padding: 11rem 16rem;
+    width: 100%;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+form {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    gap: .5rem;
+}
+header input {
+    width: 42.2rem;
+    background-color: #06181C;
+    padding: 1.3rem;
+    border: none;
+    border-radius: .5rem;
+    color: #FFF;
+}
+header input::placeholder {
+    color: #7C7C8A;
+}
+header #fav {
+    font-size: 1.4rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background-color: #065E7C;
+    padding: 1.10rem 3.2rem;
+    border: none;
+    border-radius: .5rem;
+    color: #FFF;
+    gap: .8rem;
+    cursor: pointer
+}
+button span {
+    font-size: 2rem;
+    text-align: center;
+}
+header #fav:hover {
+    background-color: #FFF;
+    color: #065E7C
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8rem;
+    border-radius: 1.2rem;
+    color: #FFF;
+    box-shadow: 0 1rem 2rem -1rem #06181C;
+}
+thead {
+    padding: 1.6rem, 4rem, 2.4rem;
+    background-color: #092D38;
+    text-align: left;
+    font-weight: normal;
+}
+thead tr th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+thead tr th:last-child {
+    border-top-right-radius: 1.2rem;
+}
+table th {
+    padding: 1.5rem;
+}
+td.user img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+tbody {
+    border-top: none;
+}
+table td {
+    padding: 2.4rem;
+    padding-left: 4rem;
+    text-align: left;
+}
+table tr .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+table tr a {
+    text-decoration: none;
+}
+table tr .user p {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+table tr .user span {
+    color: #FFF;
+    font-size: 1.6rem;
+}
+.repositories, .Followers {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#remove {
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    color: #F75A68;
+    cursor: pointer;
+}
+#remove:hover {
+    color: #d04752;
+}
+tbody tr:nth-child(even) {
+	background-color: #06181C;
+}
+tbody tr:nth-child(odd) {
+    background-color: #000;
+}
